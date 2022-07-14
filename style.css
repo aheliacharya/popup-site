@@ -1,0 +1,48 @@
+body {
+    margin: 10px;
+    background-image: url("https://thumbs.dreamstime.com/b/dark-wood-seamless-background-texture-surface-wooden-board-panel-horizontal-along-tree-fibers-direction-182771503.jpg");
+  }
+  
+  .clickme {
+    background-color: rgba(250, 193, 140, 0.959);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 0.5em 0.75em;
+    border-radius: 50px;
+    backdrop-filter: invert(1);
+  }
+  
+  .clickme:hover {
+    background-color: rgba(65, 65, 65, 0);
+    backdrop-filter: invert(0);
+  }
+  
+  #popup {
+    background-color: #ffd485;
+    opacity: 0;
+    display: none;    
+    border-radius: 50px;
+    background-image: url("https://cutewallpaper.org/27/background-wallpaper-html/1018316180.jpg");
+    max-width: 600px;
+    position: relative;
+  }
+  #popup.show {
+    opacity: 1;
+    animation: fade-in 0.5s forwards;
+    display: block;
+  }
+  
+  #popup.closing {
+    animation: fade-out 0.5s forwards;
+    display: block;
+  }
+  #close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  
